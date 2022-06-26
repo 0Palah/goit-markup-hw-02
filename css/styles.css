@@ -1,3 +1,41 @@
+.page {
+    background-color: #FFFFFF;
+    color: #212121;
+}
+.logo {
+    color: #000000;
+    text-decoration: none;
+}
+.logo-web {
+    color: #2196F3;
+}
+.list {
+    list-style: none;
+}
+
+/* навігація */
+
+.site-nav .link {
+    color: #000000;
+    text-decoration: none;
+}
+.contacts-nav .link{
+    color: #757575;
+    text-decoration: none;
+}
+.header .link:hover, 
+.header .link:focus {
+    color: #2196F3;
+}
+
+/* main */
+
+.section-p {
+    color: #757575;
+}
+
+
+
 
 
 
