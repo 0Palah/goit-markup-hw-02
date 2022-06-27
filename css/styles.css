@@ -1,13 +1,36 @@
+/* колір основного тексту       #212121 */
+/* колір другорядного тексту    #757575 */
+/* лого     чорний              #000000 
+            синій               #2196F3 */
+
+/* ховер синій                  #2196F3 */
+/* сірий майл тел               rgba(255, 255, 255, 0.6) */
+/* білий                        #FFFFFF */
+
+/* фон основний             #FFFFFF */
+/* фон другорядний          #F5F4FA */
+/* фон герой та футер       #2F303A */
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --logo-black-color: #000;
+    --mail-tel-color: rgba(255, 255, 255, 0.6);
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #F5F4FA;
+    --hero-footer-background-color: #2F303A;
+}
 .page {
-    background-color: #FFFFFF;
-    color: #212121;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
 }
 .logo {
-    color: #000000;
+    color: var(--logo-black-color);
     text-decoration: none;
 }
 .logo-web {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 .list {
     list-style: none;
@@ -16,11 +39,11 @@
 /* навігація */
 
 .site-nav .link {
-    color: #000000;
+    color: var(--primary-text-color);
     text-decoration: none;
 }
 .contacts-nav .link{
-    color: #757575;
+    color: var(--secondary-text-color);
     text-decoration: none;
 }
 .header .link:hover, 
@@ -34,21 +57,23 @@
     color: #757575;
 }
 
+/* Футер */
+.footer .logo-studio {
+    color: #FFFFFF;
+}
 
+.footer .link {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
 
+.footer .location {
+    color: #FFFFFF;
+}
 
-
-
-
-/* колір основного тексту       #212121 */
-/* колір другорядного тексту    #757575 */
-/* лого     чорний              #000000 
-            синій               #2196F3 */
-            
-/* ховер синій                  #2196F3 */
-/* футер майл тел               rgba(255, 255, 255, 0.6) */
-/* білий                        #FFFFFF */
-
-/* фон основний             #FFFFFF */
-/* фон другорядний          #F5F4FA */
-/* фон герой та футер       #2F303A */
+.footer .link:hover,
+.footer .link:focus,
+.footer .location:hover, 
+.footer .location:focus{
+    color: #2196F3;
+}
