@@ -17,9 +17,11 @@
     --accent-color: #2196F3;
     --logo-black-color: #000;
     --mail-tel-color: rgba(255, 255, 255, 0.6);
+    --text-white-color: #FFFFFF;
     --primary-background-color: #FFFFFF;
     --secondary-background-color: #F5F4FA;
     --hero-footer-background-color: #2F303A;
+    --button-hover-color: #188CE8;
 }
 .page {
     background-color: var(--primary-background-color);
@@ -48,18 +50,36 @@
 }
 .header .link:hover, 
 .header .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
 }
 
 /* main */
+/* герой */
+
+.button {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 32px;
+    color: var(--text-white-color);
+    background-color: var(--accent-color);
+}
+
+.button:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Наша команда */
 
 .section-p {
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 
 /* Футер */
 .footer .logo-studio {
-    color: #FFFFFF;
+    color: var(--text-white-color);
 }
 
 .footer .link {
@@ -68,12 +88,12 @@
 }
 
 .footer .location {
-    color: #FFFFFF;
+    color: var(--text-white-color);
 }
 
 .footer .link:hover,
 .footer .link:focus,
 .footer .location:hover, 
 .footer .location:focus{
-    color: #2196F3;
+    color: var(--accent-color);
 }
