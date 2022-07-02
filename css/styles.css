@@ -11,6 +11,9 @@
 /* фон другорядний          #F5F4FA */
 /* фон герой та футер       #2F303A */
 
+/* font-family: 'Raleway',sans-serif;
+font-family: 'Roboto', sans-serif; */
+
 :root {
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
@@ -26,19 +29,34 @@
 .page {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+/* Хедер */
+.header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
 }
 .logo {
     color: var(--logo-black-color);
     text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
 }
 .logo-web {
     color: var(--accent-color);
 }
+
 .list {
     list-style: none;
 }
 
-/* навігація */
+/* Навігація */
 
 .site-nav .link {
     color: var(--primary-text-color);
@@ -56,13 +74,30 @@
     color: var(--accent-color);
 }
 
-/* main */
-/* герой */
+/* Мейн */
 
+/* Герой */
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
 .button {
     border: none;
     border-radius: 4px;
     padding: 10px 32px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
     color: var(--text-white-color);
     background-color: var(--accent-color);
 }
@@ -71,11 +106,26 @@
     background-color: var(--button-hover-color);
 }
 
-/* Наша команда */
+ /* Особливості  */
+.features h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+.features .section-p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px; 
+}
 
 .section-p {
     color: var(--secondary-text-color);
 }
+
+/* Наша команда */
+
+
 
 /* Футер */
 .footer .logo-studio {
