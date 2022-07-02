@@ -25,6 +25,7 @@ font-family: 'Roboto', sans-serif; */
     --secondary-background-color: #F5F4FA;
     --hero-footer-background-color: #2F303A;
     --button-hover-color: #188CE8;
+    
 }
 .page {
     background-color: var(--primary-background-color);
@@ -146,6 +147,9 @@ font-family: 'Roboto', sans-serif; */
 }
 
 /* Футер */
+.footer {
+   background-color: var(--hero-footer-background-color); 
+}
 .footer .logo-studio {
     color: var(--text-white-color);
 }
