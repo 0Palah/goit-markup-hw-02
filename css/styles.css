@@ -30,13 +30,14 @@ font-family: 'Roboto', sans-serif; */
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     letter-spacing: 0.03em;
 }
 /* Хедер */
 .header {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
 .logo {
@@ -45,7 +46,7 @@ font-family: 'Roboto', sans-serif; */
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
 }
 .logo-web {
@@ -80,7 +81,7 @@ font-family: 'Roboto', sans-serif; */
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -92,7 +93,7 @@ font-family: 'Roboto', sans-serif; */
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     display: flex;
     align-items: center;
     text-align: center;
@@ -106,26 +107,43 @@ font-family: 'Roboto', sans-serif; */
     background-color: var(--button-hover-color);
 }
 
- /* Особливості  */
-.features h3 {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-}
-.features .section-p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px; 
-}
-
 .section-p {
     color: var(--secondary-text-color);
 }
 
+ /* Особливості  */
+.features h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.features .section-p {
+    font-size: 14px;
+    line-height: 1.71px; 
+}
+
+/* Чим займаємося */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
 /* Наша команда */
+.team h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    text-align: center;
+}
 
-
+.team p{
+    font-size: 16px;
+    line-height: 1.17;
+    text-align: center;
+}
 
 /* Футер */
 .footer .logo-studio {
@@ -134,9 +152,13 @@ font-family: 'Roboto', sans-serif; */
 
 .footer .link {
     color: var(--secondary-text-color);
-    text-decoration: none;
 }
 
+.footer-address {
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+}
 .footer .location {
     color: var(--text-white-color);
 }
@@ -146,4 +168,8 @@ font-family: 'Roboto', sans-serif; */
 .footer .location:hover, 
 .footer .location:focus{
     color: var(--accent-color);
+}
+
+.footer-address a {
+    text-decoration: none;
 }
