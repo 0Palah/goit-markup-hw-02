@@ -25,8 +25,8 @@ font-family: 'Roboto', sans-serif; */
     --secondary-background-color: #F5F4FA;
     --footer-background-color: #2F303A;
     --button-hover-color: #188CE8;
-    
-}
+    --radio-button-color: #F5F4FA;
+    }
 .page {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
@@ -92,9 +92,6 @@ font-family: 'Roboto', sans-serif; */
     color: var(--text-white-color);
 }
 .button {
-    border: none;
-    border-radius: 4px;
-    padding: 10px 32px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -104,10 +101,15 @@ font-family: 'Roboto', sans-serif; */
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--text-white-color);
+
     background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 32px;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
     background-color: var(--button-hover-color);
 }
 
@@ -189,7 +191,7 @@ overflow: hidden;
 .ftr .link:hover,
 .ftr .link:focus,
 .ftr-location:hover, 
-.ftr-location:focus{
+.ftr-location:focus {
     color: var(--accent-color);
 }
 
@@ -200,7 +202,19 @@ overflow: hidden;
 
 
 /* Портфоліо */
+/* Мейн */
+/* Секція */
 
 .radio-button {
-    
+    width: 145px;
+    height: 38px;
+
+    background: var(--radio-button-color);
+    border: none;
+    border-radius: 4px;
+}
+
+.radio-button:hover, 
+.radio-button:focus {
+    background-color: var(--accent-color);
 }
