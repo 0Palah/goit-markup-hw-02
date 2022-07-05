@@ -27,16 +27,16 @@ font-family: 'Roboto', sans-serif; */
     --button-hover-color: #188CE8;
     --filter-button-color: #F5F4FA;
     }
-.page {
+.body {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', 'Ubuntu', sans-serif;
     letter-spacing: 0.03em;
+    font-size: 14px;
 }
 /* Хедер */
 .hdr {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -114,32 +114,29 @@ font-family: 'Roboto', sans-serif; */
     background-color: var(--button-hover-color);
 }
 
-.section-par {
-    color: var(--secondary-text-color);
-}
-
  /* Особливості  */
 .visually-hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0;
-padding: 0;
-white-space: nowrap;
-clip-path: inset(100%);
-clip: rect(0 0 0 0);
-overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
-.features-list-title {
+.features-title {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
-.features .section-par {
-    font-size: 14px;
-    line-height: 1.71; 
+
+.features-text {
+    line-height: 1.71;
+    color: var(--secondary-text-color);
 }
 
 /* Чим займаємося */
@@ -152,22 +149,22 @@ overflow: hidden;
 /* Наша команда */
 .team {
     background-color: var(--secondary-background-color);
-    font-size: 16px;
-    line-height: 1.17;
     text-align: center;
 }
-.team-list{
+.team-item{
     background-color: var(--primary-background-color);
 }
-.team-list-title {
+.team-item-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
     text-align: center;
 }
 
-.team-par{
-
+.team-text{
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.17;
 }
 
 /* Футер */
@@ -179,7 +176,6 @@ overflow: hidden;
 }
 
 .ftr-address {
-    font-size: 14px;
     line-height: 1.71;
     font-style: normal;
 }
@@ -190,9 +186,7 @@ overflow: hidden;
 }
 
 .ftr .link:hover,
-.ftr .link:focus,
-.ftr-location:hover, 
-.ftr-location:focus {
+.ftr .link:focus {
     color: var(--accent-color);
 }
 
@@ -207,8 +201,7 @@ overflow: hidden;
 /* Секція */
 
 .filter-button {
-    width: 145px;
-    height: 38px;
+    padding: 6px 22px;
     cursor: pointer;
 
     background: var(--filter-button-color);
@@ -229,6 +222,12 @@ overflow: hidden;
     background-color: var(--accent-color);
     color: var(--text-white-color);
 }
+
+.filter-button.active {
+    background-color: var(--accent-color);
+    color: var(--text-white-color);
+}
+.filter-button.active {}
 
 .works-title {
     font-size: 18px;
